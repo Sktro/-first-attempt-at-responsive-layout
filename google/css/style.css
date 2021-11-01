@@ -1,0 +1,288 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: url(../img/99px_ru_wallpaper_219897_kosmonavt_s_kosmosom_v_skafandre_stoit_na_doroge.jpg)50%/cover no-repeat;
+    position: fixed;
+}
+
+.header{
+    display: flex;
+    color: white;
+    width: 100%;
+    min-height: 50px;
+    background-color: #0f0d17ad;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 7px 41px -10px rgb(238, 142, 7);
+}
+
+.topright{
+    display: flex;
+    flex-grow:1;
+    align-items: center;
+    justify-content: space-around;
+    width: 230px;
+}
+.mymail{
+    border-radius: 100%;
+z-index: 30;
+}
+.mymail:hover{
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.411);
+}
+.contain{
+    overflow-x: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    flex-grow: 1;
+}
+.logosreach{
+    display: flex;
+    position: relative;
+    top: 5%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 19px;
+    min-height: 270px;
+    flex-grow: 1;
+}
+
+.googlelogo{
+    height: 109px;
+    filter: drop-shadow(0 0 0.9rem rgb(25, 0, 255));
+    animation-name: blink-shadow;
+    animation-duration: 2s;
+    Animation-timing-function: ease-in;
+    Animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes blink-shadow {
+    0%{
+        filter: drop-shadow(0 0 0.1rem rgb(25, 0, 255))
+    }
+    30%{
+        filter: drop-shadow(0 0 0.4rem rgb(25, 0, 255))
+    }
+    65%{
+        filter: drop-shadow(0 0 0.6rem rgb(25, 0, 255))
+    }
+    100%{
+        filter: drop-shadow(0 0 1rem rgb(25, 0, 255))
+    }
+}
+.input{
+    background: url(../img/Magnifier.png)10px/21px no-repeat;
+}
+.input{
+display: flex;
+
+height: 44px;
+border-radius: 25px;
+font-size: 18px;
+font-family: 'Open Sans', sans-serif;
+background-color: rgba(255, 255, 255, 0.342);
+box-sizing: border-box;
+width: 100%;
+font-weight: 500;
+padding-left: 40px;
+color: rgb(75, 74, 74);
+}
+.img{
+    position: absolute;
+    right: 25px;
+    top: 19px;
+}
+/*--------контейнер----------*/
+.sreach{
+    padding: 10px;
+    display: flex;
+    max-width: 925px;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    position: relative;
+}
+/*--------контейнер----------*/
+.twobuttom{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-grow:1;
+}
+
+.button1 {
+    position: relative;
+    color: white;
+    background: linear-gradient(0deg, rgba(12, 43, 89, 0.89) 39%, rgba(16, 66, 141, 0.89) 89%);
+    width: 133px;
+    height: 36px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.button2 {
+    position: relative;
+    left: 12px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(12, 43, 89, 0.89) 39%, rgba(16, 66, 141, 0.89) 89%);
+    width: 118px;
+    height: 36px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+input:focus{
+box-shadow: 1px 1px 30px 6px rgba(0, 140, 247, 0.678);
+}
+
+input::placeholder{
+color: rgba(72, 87, 82, 0.644);
+font-family: 'Open Sans', sans-serif;
+font-weight: 500;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+
+input:hover{
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+button:hover{
+    box-shadow: 0 0 13px 2px rgba(240, 141, 7, 1);
+}
+
+.footer {
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0F0D17af;
+    color: rgba(255,255,255,.54);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    box-shadow: 0 -27px 41px -28px rgba(255, 255, 255, 0.43);
+    z-index: 2;
+}
+@media screen and (max-width: 320px) {
+    .footer{
+        font-size: 13px;
+    }
+
+}
+.textfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.russia{
+    padding: 15px 15px 15px 30px;
+    display: flex;
+    flex-grow: 1;
+    border-bottom: 1px solid #5d5a68ec;
+}
+
+.bottomtext{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about{
+    display: flex;
+}
+
+.bottomtext a{
+    padding: 12px;
+    color: rgba(255,255,255,.54);
+    justify-content: center;
+    align-items: center;
+}
+
+.ecology {
+    flex: 0 0 428px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/leaf.png) left/15px no-repeat;
+}
+.ecology a{
+padding: 0 15px 0 18px;
+}
+@media screen and (max-width: 425px) {
+    .ecology{
+    background: url(../img/leaf.png) left top/16px no-repeat;
+    flex: 0 0 348px;
+    }
+    }
+    @media screen and (max-width: 320px) {
+        .ecology{
+        background: url(../img/leaf.png) left top/15px no-repeat;
+        flex: 0 0 316px;
+        }
+        }
+
+.settings {
+    display: flex;
+}
+
+.bottomtext a:hover{
+    text-decoration: underline;
+    transform: scale(1.021);
+}
+
+.topright a:hover{
+    text-decoration: underline;
+}
+
+.topright a{
+color: rgb(255, 255, 255);
+}
